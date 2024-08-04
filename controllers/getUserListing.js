@@ -9,7 +9,7 @@ exports.getUserListing = async (req, res) => {
       return res.status(401).json({
         success: false,
         status_code: 401,
-        message: "No token provided, authorization denied",
+        message: "Token not provided, authorization denied",
       });
     }
 
